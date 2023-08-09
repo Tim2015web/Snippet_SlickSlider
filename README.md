@@ -9,10 +9,13 @@ Exemple Slick Slider.
 Name classes:
 /* Слайдер */
 .slick-slider{}
+
 /* Слайдер запущен */
 .slick-slider.slick-initialized{}
+
 /* Слайдер с точками */
 .slick-slider.slick-dotted{}
+
 /* Ограничивающая оболочка */
 .slick-list {}
 /* Лента слайдов */
