@@ -1,5 +1,13 @@
 /*Common style*/
 
-body{
+body {
     //font-family: ;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
 }
