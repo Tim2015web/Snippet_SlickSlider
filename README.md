@@ -71,7 +71,7 @@ Help.
     }); // После смены слайда
 
     Методы
-    
+
     $('.slider').slick('setPosition'); // Перерисовка
     $('.slider').slick('goTo', 3); // Перейти к конкретному слайду
     $('.slider').slick('slickPrev'); // Листать (slickNext)
@@ -144,7 +144,3 @@ CSS классы:
 
 /* Элемент точки */
 .slick-dots li button{}
-
----
-
-<img src="screenshot.jpg" title="Screenshot" alt="HTML"/>
