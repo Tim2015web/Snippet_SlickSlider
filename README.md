@@ -60,9 +60,38 @@ Help.
         appendArrows: $('.arrows'), // Внешний блок со стрелками
         appendDots: $('.arrows'), // Внешний блок с точками
 
+    События
+
+    $('.slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        console.log(currentSlide);
+    }); // До смены слайда
+
+    $('.slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
+        console.log(currentSlide);
+    }); // После смены слайда
+
+    Методы
+    
+    $('.slider').slick('setPosition'); // Перерисовка
+    $('.slider').slick('goTo', 3); // Перейти к конкретному слайду
+    $('.slider').slick('slickPrev'); // Листать (slickNext)
+    $('.slider').slick('slickPlay'); // Активировать autoplay (slickPause)
+
+    // Добавить в слайдер
+    $('.link_add').click(function (event) {
+        $('.slider').slick('slickAdd', 'контент');
+        return
+    });
+
+    // Удалить слайд
+    $('.link_remove').click(function (event) {
+        $('.slider').slick('slickRemove', 0);
+        return
+    });
+
 ---
 
-Name classes:
+CSS классы:
 
 /* Слайдер */
 .slick-slider{}
